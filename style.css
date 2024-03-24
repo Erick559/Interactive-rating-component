@@ -70,6 +70,27 @@ div{
     cursor: pointer;
 }
 
+.rate.active{
+    display:block;
+}
+
+.rate{
+    display:none;
+}
+
+.rating:hover{
+    background:hsl(217, 12%, 63%);
+}
+
+.rating.active-button{
+    background: hsl(25, 97%, 53%);
+}
+
+.rating.active-button,
+.rating:hover{
+    color: hsl(0, 0%, 100%);
+}
+
 .submit{
     color:hsl(0, 0%, 100%);
     background:hsl(25, 97%, 53%);
@@ -79,16 +100,25 @@ div{
     padding:15px;
     letter-spacing: 3px;
     font-weight: 700;
+    cursor:pointer;
+}
+
+.submit:active{
+    background: hsl(0, 0%, 100%);
+    color:hsl(25, 97%, 53%);
 }
 
 .thank-you{
+    display: none;
+}
+
+.thank-you.active{
     text-align: center;
     padding:10px;
     display:flex;
     flex-direction: column;
     align-items: center;
     gap:10px;
-    display: none;
 }
 
 .rating-output{
@@ -107,6 +137,12 @@ div{
 .thanks-content p{
     color:hsl(216, 12%, 54%);
     font-size: 15px;
+}
+
+.error{
+    color:red;
+    text-align: center;
+    margin-top: 10px;
 }
 
 @media screen and (min-width:800px) {
